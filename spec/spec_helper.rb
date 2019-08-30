@@ -1,7 +1,6 @@
+require 'coveralls'
 require 'simplecov'
 require 'simplecov-console'
-require 'coveralls'
-Coveralls.wear!
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
   [

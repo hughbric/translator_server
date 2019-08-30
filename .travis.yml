@@ -15,6 +15,3 @@ before_script:
 
 script:
  - bundle exec rspec
-
-after_script:
- - bundle exec rake coveralls:push
