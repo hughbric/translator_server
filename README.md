@@ -1,6 +1,11 @@
 # Translator
 
-A backend server that translates terms into pig-latin.
+A backend server that translates terms into pig-latin. It is deployed on Heroku.
+
+The URL:  
+[https://trans-late.herokuapp.com/](https://trans-late.herokuapp.com/)
+
+The frontend React repository can be found [here](https://github.com/hughbric/translator_frontend) - which is deployed on Netlify [here](https://vigorous-blackwell-e2069e.netlify.com/)
 
 ## API
 
@@ -23,4 +28,4 @@ Updates a term.
 ## Todos
 
 - Setup whitelist.
-- Wrap API in v1.
+- Wrap API route in v1.
