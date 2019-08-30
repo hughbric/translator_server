@@ -1,6 +1,6 @@
 class TermsController < ApplicationController
-end
-class TermsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+  
   def index
     terms = Term.order('created_at DESC');
     render json: {status: 'SUCCESS', message:'Loaded terms', data:terms},status: :ok

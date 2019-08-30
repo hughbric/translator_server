@@ -1,24 +1,26 @@
-# README
+# Translator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A backend server that translates terms into pig-latin.
 
-Things you may want to cover:
+## API
 
-* Ruby version
+`GET /`  
+Returns all terms.  
 
-* System dependencies
+`GET /terms/[:id]`  
+Returns term.  
 
-* Configuration
+`POST /terms`  
+Content-Type: application/json  
+Body: { "term":"example" }  
 
-* Database creation
+`DELETE /terms/[:id]`  
+Deletes a term.  
 
-* Database initialization
+`PUT /terms/[:id]`  
+Updates a term.  
 
-* How to run the test suite
+## Todos
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Setup whitelist.
+- Wrap API in v1.
