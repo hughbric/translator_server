@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/hughbric/translator_server.svg?branch=master)](https://travis-ci.org/hughbric/translator_server)
+[![Coverage Status](https://coveralls.io/repos/github/hughbric/translator_server/badge.svg?branch=master)](https://coveralls.io/github/hughbric/translator_server?branch=master)
+
 # Translator
 
 A backend server that translates terms into pig-latin. It is deployed on Heroku.
