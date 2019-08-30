@@ -17,6 +17,11 @@ class TermsController < ApplicationController
     end
   end
 
+  def show
+    term = Term.find(params[:id])
+    render json: {status: 'SUCCESS', message:'Loaded term', data:term},status: :ok
+  end
+
   private
 
   def term_params
