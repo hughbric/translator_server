@@ -28,6 +28,16 @@ class TermsController < ApplicationController
     render json: {status: 'SUCCESS', message:'Deleted term', data:term},status: :ok
   end
 
+  def update
+    term = Term.find(params[:id])
+    term.pig_latin = term.translate_term(term.term)
+    if term.update_attributes(term_params)
+      render json: {status: 'SUCCESS', message:'Updated term', data:term},status: :ok
+    else
+      render json: {status: 'ERROR', message:'Term not updated', data:term.errors},status: :unprocessable_entity
+    end
+  end
+
   private
 
   def term_params
