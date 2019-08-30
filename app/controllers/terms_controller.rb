@@ -22,6 +22,12 @@ class TermsController < ApplicationController
     render json: {status: 'SUCCESS', message:'Loaded term', data:term},status: :ok
   end
 
+  def destroy
+    term = Term.find(params[:id])
+    term.destroy
+    render json: {status: 'SUCCESS', message:'Deleted term', data:term},status: :ok
+  end
+
   private
 
   def term_params
