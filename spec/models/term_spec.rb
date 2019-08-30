@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Term, type: :model do
-  # pending "add some examples to (or delete) #{__FILE__}"
+  describe 'translate_term' do
+    it 'starting with consonants' do
+      term = Term.new
+      expect(term.translate_term('pig')).to eq('igpay')
+    end
+  end
 end
