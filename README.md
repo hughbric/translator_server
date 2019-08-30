@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/hughbric/translator_server.svg?branch=master)](https://travis-ci.org/hughbric/translator_server)
-[![Coverage Status](https://coveralls.io/repos/github/hughbric/translator_server/badge.svg?branch=master)](https://coveralls.io/github/hughbric/translator_server?branch=master)
 
 # Translator
 
@@ -9,6 +8,11 @@ The URL:
 [https://trans-late.herokuapp.com/](https://trans-late.herokuapp.com/)
 
 The frontend React repository can be found [here](https://github.com/hughbric/translator_frontend) - which is deployed on Netlify [here](https://vigorous-blackwell-e2069e.netlify.com/)
+
+## How to run the test suite
+
+- Clone the repository and navigate to the project root.
+- Run `rspec`
 
 ## API
 
