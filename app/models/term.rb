@@ -1,28 +1,29 @@
 class Term < ApplicationRecord
   validates_presence_of :term, :pig_latin
 
-  VOWELS = ['A', 'E', 'I', 'O', 'U']
+  VOWELS = ['a', 'e', 'i', 'o', 'u']
 
   def translate_term(term)
     return if term == nil
     output = ''
-    words = term.split
+    words = term.downcase.split
 
     words.each do |word|
       if !output.empty?
         output << ' '
       end
 
-      if !VOWELS.include?(word[0].upcase)
-        if !VOWELS.include?(word[1].upcase)
-          output << mutate_double_consonant(word)
+      if !VOWELS.include?(word[0])
+        if !VOWELS.include?(word[1])
+          output << mutate_double_consonant(word).capitalize
         else
-          output << mutate_consonant(word)
+          output << mutate_consonant(word).capitalize
         end
       end
 
-      if VOWELS.include?(word[0].upcase)
-        output <<  word + 'way'
+      if VOWELS.include?(word[0])
+        trans_word = word + 'way'
+        output <<  trans_word.capitalize
       end
     end
     output

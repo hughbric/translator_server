@@ -19,7 +19,7 @@ describe 'Post a term route', :type => :request do
     end
 
     it 'returns the terms\'s pig-latin' do
-      expect(JSON.parse(response.body)['data']['pig_latin']).to eq('ananabay')
+      expect(JSON.parse(response.body)['data']['pig_latin']).to eq('Ananabay')
     end
 
     it 'returns status success' do
