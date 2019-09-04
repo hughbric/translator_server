@@ -6,7 +6,7 @@ class Term < ApplicationRecord
   def translate_term(term)
     return if term == nil
     output = ''
-    words = term.downcase.split
+    words = term.downcase.gsub(/[^[:word:]\s]/, '').strip.split
 
     words.each do |word|
       if !output.empty?

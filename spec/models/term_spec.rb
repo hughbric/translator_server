@@ -21,5 +21,13 @@ RSpec.describe Term, type: :model do
     it 'translates multiple words' do
       expect(subject.translate_term('good evening')).to eq('Oodgay Eveningway')
     end
+
+    it 'removes punctuation' do
+      expect(subject.translate_term('Hello, Sir! Good evening?')).to eq('Ellohay Irsay Oodgay Eveningway')
+    end
+
+    it 'removes trailing whitespace' do
+      expect(subject.translate_term('  Good evening  ')).to eq('Oodgay Eveningway')
+    end
   end
 end
