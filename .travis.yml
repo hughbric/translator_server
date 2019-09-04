@@ -17,7 +17,7 @@ deploy:
   provider: heroku
   api_key:
     secure: F7NneJm0wwFyKDvpnzAK3TPS+/7Fbndpj4aRmAURx3HEWbcFZVFVT9CJDjnGSUI865MbrdDuCWcBhO9R2HjCQdJzJMN5CLWbq2T0qsI1aD8yVx560lZqKY4Q2O6QsVSHLVfMPxQhkgy84NqAt1lnPQIrXZ8/exysIj3lPRfnO3CgUuLg0uh1ffviGYHHGiMGZpz4U+Tv8Esnn3D1Q+uE8i3umAN1yyZEbh/7dsQ/KljJVXTyHquEfXsS/2qMUuKpTCHCATlUkcuDkbSORKE7aHXka0uwuh9XcXwXyUgVYhTpUicFvGen/3WbRR7ykvNwfD3pk2LT433v4/CNHNX0wVvjHyHV1tzXVRSNknN2y76eq2Le4ovg3+geRkcqRPXFMfx/HwDPKnL5y16xK5LSIJI04beZ0EhkXC5w4dOSSaYwX1TtCafr7xxjVwEvUKeHA+Ffm90F60w5ZwhP/piA8AqA2jogmNX+OkVL/N9nEBtywVDhTgRmgmp95zW+SV+0VzWUI8/VW2oOHLg9QjMO5G8P74HCniKtY2CYqh3ESTS4fM3ZfyF4PmG5k5cA/8zZuLCEq8RonFlpTo2wJACgGBQ1aHFbWYzL3cg2EW726pWwbka97qYw54IWWdmjv/avYBwmDCK6dPdHx8SbtkWCowBDfZNSjCkGF0+qerw0rGI=
-  app: translator_server
+  app: trans-late
   on:
     repo: hughbric/translator_server
 env:
