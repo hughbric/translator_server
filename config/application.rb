@@ -21,15 +21,15 @@ Bundler.require(*Rails.groups)
 
 module TranslatorServer
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    # config.load_defaults 6.0
-
     config.middleware.insert_before 0, Rack::Cors do
       allow do
          origins 'https://vigorous-blackwell-e2069e.netlify.com/'
          resource '*', :headers => :any, :methods => [:get, :post, :options]
        end
     end
+
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
